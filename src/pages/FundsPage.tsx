@@ -128,9 +128,9 @@ const FundsPage = () => {
         </div>
       )}
       <div className="saldo-card">
-        <h2>Saldo Disponible: ${balance}</h2>
+        <h2>Saldo saldo Disponible:${balance}</h2>
       </div>
-      <h3>Fondos Disponibles</h3>
+      <h3> Disponibles</h3>
       <Table<Fund>
         data={availableFunds}
         columns={[

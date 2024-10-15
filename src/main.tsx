@@ -5,9 +5,7 @@ import {
 } from "react-router-dom";
 import App from './App'; // Importar el componente App
 import FundsPage from './pages/FundsPage'; // Asegúrate de importar las páginas
-import ClientsPage from './pages/ClientsPage';
-import ServicesPage from './pages/ServicesPage';
-import ProvidersPage from './pages/ProvidersPage';
+import TransactionsPage from './pages/TransactionPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();
@@ -24,21 +22,13 @@ const router = createBrowserRouter([
       },
       {
         path: "clients",
-        element: <ClientsPage />,
-      },
-      {
-        path: "services",
-        element: <ServicesPage />,
-      },
-      {
-        path: "providers",
-        element: <ProvidersPage />,
-      },
+        element: <TransactionsPage />,
+      }
+ 
     ],
   },
 ]);
 
-// Renderiza el enrutador
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 root.render(
